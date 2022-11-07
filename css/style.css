@@ -1,0 +1,187 @@
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%); }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 90em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: var(--Off-white);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.2; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav__list {
+    list-style: none; }
+  .nav__items {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: capitalize; }
+    @media only screen and (max-width: 48em) {
+      .nav__items {
+        display: none; } }
+    @media only screen and (max-width: 23.5em) {
+      .nav__items {
+        display: none; } }
+  .nav__link {
+    margin: 0 1.5rem;
+    text-decoration: none;
+    color: var(--Grayish-blue); }
+    .nav__link:active {
+      color: var(--Soft-red); }
+  @media only screen and (min-width: 48em) {
+    .nav__hamburger {
+      display: none; } }
+
+.one {
+  border: none;
+  background-color: #dddddddd;
+  height: 1px; }
+
+.container {
+  margin: 5rem auto;
+  width: 105em; }
+  @media only screen and (max-width: 48em) {
+    .container {
+      width: 49em; } }
+  @media only screen and (max-width: 26.5em) {
+    .container {
+      width: 35em; } }
+
+.section-about {
+  margin-top: 5rem;
+  display: grid;
+  grid-gap: 3.5rem;
+  place-items: center;
+  grid-template-columns: 3fr 1fr; }
+  @media only screen and (max-width: 48em) {
+    .section-about {
+      display: flex;
+      flex-direction: column; } }
+
+.about__image {
+  width: 100%;
+  max-width: 100%; }
+
+.article {
+  margin: 2.5rem 0; }
+  .article__details {
+    display: flex; }
+    @media only screen and (max-width: 48em) {
+      .article__details {
+        flex-direction: column; } }
+  .article__heading {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--Very-dark-blue); }
+  .article__paragraph {
+    font-size: 1.5rem;
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    line-height: 1.6;
+    margin-left: 5rem;
+    justify-items: self-start;
+    width: 110%;
+    color: var(--Dark-grayish-blue); }
+    @media only screen and (max-width: 48em) {
+      .article__paragraph {
+        width: 90%;
+        margin: 2rem 0;
+        font-size: 2rem; } }
+  .article__btn {
+    border: none;
+    padding: 1.5rem 2rem;
+    letter-spacing: .5rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--Off-white);
+    background-color: var(--Soft-red);
+    transform: translateX(192%) translateY(-70%); }
+    .article__btn:active {
+      background-color: var(--Very-dark-blue); }
+    @media only screen and (max-width: 48em) {
+      .article__btn {
+        transform: translateX(0) translateY(0); } }
+
+.detail {
+  place-self: start;
+  background-color: var(--Very-dark-blue);
+  width: 35rem;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem; }
+  @media only screen and (max-width: 48em) {
+    .detail {
+      width: 100%; } }
+  .detail__head {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--Soft-orange); }
+  .detail__article {
+    margin: 2.2rem 0; }
+  .detail__heading {
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: 800;
+    color: var(--Off-white); }
+  .detail__paragraph {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--Dark-grayish-blue); }
+
+.second-section {
+  margin: 5rem 0; }
+
+.gadget {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  @media only screen and (max-width: 48em) {
+    .gadget {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; } }
+  .gadget__article {
+    display: flex; }
+  .gadget__details {
+    width: 100%;
+    margin-left: -7rem; }
+  .gadget__num {
+    font-size: 3rem;
+    color: var(--Grayish-blue);
+    font-weight: 700; }
+  .gadget__header {
+    margin: 1rem 0; }
+  .gadget__link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+    font-weight: 800; }
+    .gadget__link:active {
+      color: var(--Soft-red); }
+  .gadget__paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--Dark-grayish-blue); }
+    @media only screen and (max-width: 48em) {
+      .gadget__paragraph {
+        font-size: 1.5rem; } }
+  .gadget__img {
+    width: 50%; }
